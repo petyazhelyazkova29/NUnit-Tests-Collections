@@ -10,7 +10,6 @@ namespace Collections_Tests_NUnit
         {
             var nums = new Collection<int>();
             Assert.That(nums.ToString(), Is.EqualTo("[]"));
-
         }
 
         [Test]
@@ -18,7 +17,6 @@ namespace Collections_Tests_NUnit
         {
             var nums = new Collection<int>(2);
             Assert.That(nums[0], Is.EqualTo(2));
-
         }
 
         [Test]
@@ -26,7 +24,6 @@ namespace Collections_Tests_NUnit
         {
             var nums = new Collection<int>(3, 5, 7);
             Assert.That(nums.ToString(), Is.EqualTo("[3, 5, 7]"));
-
         }
 
         [Test]
@@ -49,7 +46,6 @@ namespace Collections_Tests_NUnit
         }
 
         [Test]
-
         public void Test_Collections_AddNumberToFullCollection()
         {
             var nums = new Collection<int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
@@ -99,7 +95,6 @@ namespace Collections_Tests_NUnit
             string nestedToString = nested.ToString();
             Assert.That(nestedToString,
               Is.EqualTo("[[Petya, Ivelina, Raina], [29, 30, 31]]"));
-
         }
 
         [Test]
@@ -174,9 +169,6 @@ namespace Collections_Tests_NUnit
             var nums = new Collection<int>(2, 4, 6);
             nums.Exchange(0, 1);
             Assert.That(nums.ToString, Is.EqualTo("[4, 2, 6]"));
-        }
-
-        
+        }      
     }
-
 }
